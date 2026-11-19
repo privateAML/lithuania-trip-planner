@@ -1,0 +1,30 @@
+{
+  "source": "Ryanair fare calendar",
+  "departure_date": "2026-12-12",
+  "observations": [
+    {
+      "origin": "PLQ",
+      "arrival": "STN",
+      "fare_eur": 26.99,
+      "minutes": 145
+    },
+    {
+      "origin": "KUN",
+      "arrival": "STN",
+      "fare_eur": 24.99,
+      "minutes": 165
+    },
+    {
+      "origin": "KUN",
+      "arrival": "LTN",
+      "fare_eur": 21.99,
+      "minutes": 170
+    },
+    {
+      "origin": "VNO",
+      "arrival": "STN",
+      "fare_eur": 44.99,
+      "minutes": 170
+    }
+  ]
+}
