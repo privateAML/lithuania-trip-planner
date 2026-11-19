@@ -2,7 +2,7 @@
 import queue
 import threading
 
-from flight_search import find_ranked_flights_with_fallbacks
+from flight_planner.core.flight_search import find_ranked_flights_with_fallbacks
 
 SEARCH_POLL_MS = 100
 

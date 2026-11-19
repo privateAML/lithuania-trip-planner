@@ -1,9 +1,9 @@
 """Search providers in priority order before moving to other dates."""
 from functools import partial
 
-from google_flights import fetch_google_flight_offers
-from planner import fetch_and_rank_flight_offers
-from ryanair import FLEXIBLE_DATE_DAYS, NEARBY, fetch_nearest_ryanair_offers, fetch_ryanair_direct_offers
+from flight_planner.providers.google_flights import fetch_google_flight_offers
+from flight_planner.core.planner import fetch_and_rank_flight_offers
+from flight_planner.providers.ryanair import FLEXIBLE_DATE_DAYS, NEARBY, fetch_nearest_ryanair_offers, fetch_ryanair_direct_offers
 
 
 def fetch_offers_for_requested_date(currency, airport, destination, day):

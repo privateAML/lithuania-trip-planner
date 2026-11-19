@@ -11,7 +11,11 @@ REQUEST_TIMEOUT_SECONDS = 40
 
 
 def fetch_google_flight_offers(airport, destination, day, currency):
-    executable = Path(sys.executable).parent / "Scripts" / "fli.exe"
+    python_dir = Path(sys.executable).parent
+    executable = python_dir / "fli"
+    if os.name == "nt":
+        windows_location = python_dir / "Scripts" / "fli.exe"
+        executable = windows_location if windows_location.is_file() else python_dir / "fli.exe"
     command = str(executable) if executable.is_file() else shutil.which("fli")
     if not command:
         raise ValueError("Google Flights adapter is missing. Run setup.bat.")

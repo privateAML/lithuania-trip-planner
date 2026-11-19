@@ -4,7 +4,7 @@ import unicodedata
 from dataclasses import dataclass
 from datetime import date
 
-from planner import AIRPORTS, HOURS_PER_DAY, MINUTES_PER_HOUR, SearchRequest, parse_amount_to_cents
+from flight_planner.core.planner import AIRPORTS, HOURS_PER_DAY, MINUTES_PER_HOUR, SearchRequest, parse_amount_to_cents
 
 MAX_GROUND_MINUTES = 7 * HOURS_PER_DAY * MINUTES_PER_HOUR
 NO_GROUND_TRAVEL = (0, 0)

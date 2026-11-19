@@ -4,9 +4,9 @@ from dataclasses import dataclass
 from functools import partial
 from tkinter import messagebox, ttk
 
-from planner import AIRPORTS, format_currency_amount
-from search_view import open_flight_search_view
-from trip_form import normalize_city_name
+from flight_planner.core.planner import AIRPORTS, format_currency_amount
+from flight_planner.ui.search_view import open_flight_search_view
+from flight_planner.ui.trip_form import normalize_city_name
 
 COLUMNS = {
     "Traveler": 115, "Travel to airport": 250, "Destination": 115,

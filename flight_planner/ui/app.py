@@ -4,10 +4,10 @@ import tkinter as tk
 from functools import partial
 from tkinter import ttk
 
-from accounts import MIN_PASSWORD_LENGTH, register_or_verify_local_account
-from group_view import GroupView
-from search_view import open_flight_search_view
-from theme import apply_desktop_theme
+from flight_planner.storage.accounts import MIN_PASSWORD_LENGTH, register_or_verify_local_account
+from flight_planner.ui.group_view import GroupView
+from flight_planner.ui.search_view import open_flight_search_view
+from flight_planner.ui.theme import apply_desktop_theme
 
 ACCOUNT_WINDOW_SIZE = "500x410"
 GROUP_WINDOW_SIZE = "1120x640"

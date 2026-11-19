@@ -17,7 +17,7 @@ MAX_AMOUNT = 1_000_000
 MINUTES_PER_HOUR = 60
 HOURS_PER_DAY = 24
 MAX_SEARCH_WORKERS = len(AIRPORTS)
-RANKING_SQL = Path(__file__).with_name("ranking.sql")
+RANKING_SQL = Path(__file__).resolve().parents[1] / "storage" / "ranking.sql"
 OFFER_SCHEMA = """CREATE TABLE offers (
     airport TEXT, arrival TEXT, airline TEXT, currency TEXT, fare_cents INTEGER,
     stops INTEGER, flight_min INTEGER, ground_min INTEGER, ground_cents INTEGER,

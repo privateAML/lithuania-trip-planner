@@ -5,9 +5,18 @@ import os
 from pathlib import Path
 import re
 import sqlite3
+import sys
 from contextlib import closing
 
-DB = Path(os.environ.get("LOCALAPPDATA", Path.home())) / "LithuaniaFlightPlanner" / "accounts.db"
+def account_database_path():
+    if sys.platform == "darwin":
+        home = Path.home() / "Library" / "Application Support"
+    else:
+        home = Path(os.environ.get("LOCALAPPDATA", Path.home()))
+    return home / "LithuaniaFlightPlanner" / "accounts.db"
+
+
+DB = account_database_path()
 PASSWORD_HASH_ITERATIONS = 600_000
 PASSWORD_SALT_BYTES = 16
 MIN_USERNAME_LENGTH, MAX_USERNAME_LENGTH = 3, 32

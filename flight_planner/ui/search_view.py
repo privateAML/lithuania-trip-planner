@@ -3,10 +3,10 @@ import tkinter as tk
 from datetime import date, datetime
 from tkinter import messagebox, ttk
 
-from date_picker import open_departure_date_picker
-from planner import AIRPORTS, BALANCED_SCORE_MAX, MINUTES_PER_HOUR, format_currency_amount
-from search_tasks import start_flight_search_in_background
-from trip_form import ORIGINS, DESTINATIONS, build_validated_trip_request, find_city_prefix_matches, normalize_city_name
+from flight_planner.ui.date_picker import open_departure_date_picker
+from flight_planner.core.planner import AIRPORTS, BALANCED_SCORE_MAX, MINUTES_PER_HOUR, format_currency_amount
+from flight_planner.ui.search_tasks import start_flight_search_in_background
+from flight_planner.ui.trip_form import ORIGINS, DESTINATIONS, build_validated_trip_request, find_city_prefix_matches, normalize_city_name
 
 DEFAULT_PREFLIGHT_MINUTES = 120
 FIRST_PLACE = 1
