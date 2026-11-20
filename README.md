@@ -1,6 +1,6 @@
 # Lithuania Flight Planner
 
-A Windows desktop app for comparing one-way flights from Vilnius (VNO), Kaunas (KUN) and Palanga (PLQ) to European destinations. Search for one traveler or build a group itinerary with separate routes, arrival times and fares for each person.
+A portfolio project built for my application to Vinted. The desktop app compares one-way flights from Vilnius (VNO), Kaunas (KUN) and Palanga (PLQ) to European destinations. Search for one traveler or build a group itinerary with separate routes, arrival times and fares for each person.
 
 ## Example search: Lithuania to London
 
