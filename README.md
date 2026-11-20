@@ -19,6 +19,14 @@ In this search, paying **€5 more** saved **25 minutes in the air**. The flight
 
 [View the data behind the charts](docs/media/london-snapshot.json). Prices and availability change.
 
+## Research focus: same-day fare savings
+
+How much could travelers save by switching departure airports on the same day? In the London snapshot, I compared direct flights to the same arrival airport (Stansted). The lowest observed fare was €24.99 from Kaunas, €2 below Palanga and €20 below Vilnius.
+
+![Same-day fare gaps for direct flights to London Stansted](docs/media/stansted-fare-gaps.png)
+
+This is a single fare snapshot. The comparison excludes ground transport, baggage and booking fees.
+
 ## How it works
 
 1. **Collect offers.** Python requests live results through the unofficial Google Flights adapter [fli](https://github.com/punitarani/fli). The Ryanair fare calendar provides a direct-flight fallback.
